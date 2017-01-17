@@ -1,6 +1,6 @@
 console.log('User Notes exercise')
 
-lett app = angular.module('userNotes', ['ng-Route'])
+const app = angular.module('userNotes', ['ng-Route'])
 
 app.config(function($routeProvider) {
    $routeProvider
@@ -13,7 +13,7 @@ app.config(function($routeProvider) {
          templateUrl: 'partials/new.html'
       })
       .when('/notes', {
-         controller: 'mainCtrl',
+         controller: 'notesCtrl',
          templateUrl: 'partials/notes.html'
       })
       .when('/register', {
@@ -27,3 +27,24 @@ app.config(function($routeProvider) {
 
 
 // ______controllers______
+
+app.controller('loginCtrl', function($scope) {
+
+})
+
+app.controller('newCtrl', function($scope) {
+
+})
+
+app.controller('notesCtrl', function($scope) {
+   console.log('___this is the notes page___')
+
+   $http.get('')
+   .then( () => {
+
+   })
+})
+
+app.controller('mainCtrl', function($scope) {
+
+})
