@@ -1,0 +1,22 @@
+{
+  "name": "user-notes",
+  "homepage": "https://github.com/m-tambo/user-notes",
+  "authors": [
+    "Michael Tambornino <michael.tambornino@gmail.com>"
+  ],
+  "description": "'angular authentication exercise'",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "firebase": "^3.6.5",
+    "angular": "^1.6.1",
+    "angular-route": "^1.6.1"
+  }
+}
