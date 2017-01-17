@@ -1,6 +1,6 @@
 console.log('User Notes exercise')
 
-const app = angular.module('userNotes', ['ng-Route'])
+const app = angular.module('userNotes', ['ngRoute'])
 
 app.config(function($routeProvider) {
    $routeProvider
@@ -36,12 +36,12 @@ app.controller('newCtrl', function($scope) {
 
 })
 
-app.controller('notesCtrl', function($scope) {
+app.controller('notesCtrl', function($scope, $http) {
    console.log('___this is the notes page___')
 
-   $http.get('')
-   .then( () => {
-
+   $http.get('https://user-notes-exercise.firebaseio.com/.json')
+   .then( function(data) {
+      console.log(data)
    })
 })
 
