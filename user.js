@@ -29,7 +29,11 @@ app.config(function($routeProvider) {
 // ______controllers______
 
 app.controller('loginCtrl', function($scope) {
-
+   $scope.submit = function () {
+      redirectTo: '#!/notes'
+      console.log('go')
+      // if(firebase.auth().currentUser !== null)
+   }
 })
 
 app.controller('newCtrl', function($scope) {
