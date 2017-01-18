@@ -1,4 +1,4 @@
-console.log('User Notes exercise')
+console.log('___User Notes exercise___')
 
 const app = angular.module('userNotes', ['ngRoute'])
 
