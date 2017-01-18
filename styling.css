@@ -1,3 +1,17 @@
 body {
    background-color: #lightgreen;
 }
+
+form {
+   margin: 6% 0% 0% 20%;
+}
+
+.welcome {
+   margin: 1% 0% 0% 15%;
+}
+
+.bigTextbox {
+   width: 60%;
+   height: 350px;
+   margin: 3% 0;
+}

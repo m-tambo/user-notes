@@ -17,7 +17,7 @@ app.config(function($routeProvider) {
          templateUrl: 'partials/notes.html'
       })
       .when('/register', {
-         controller: 'mainCtrl',
+         controller: 'registerCtrl',
          templateUrl: 'partials/register.html'
       })
       .otherwise({
@@ -28,16 +28,18 @@ app.config(function($routeProvider) {
 
 // ______controllers______
 
-app.controller('loginCtrl', function($scope) {
+app.controller('loginCtrl', function($scope, $location) {
    $scope.submit = function () {
-      redirectTo: '#!/notes'
+      $location.path('/notes')
       console.log('go')
       // if(firebase.auth().currentUser !== null)
    }
 })
 
-app.controller('newCtrl', function($scope) {
-
+app.controller('newCtrl', function($scope, $http, $location) {
+   $scope.addNote = function () {
+      $location.path('/notes')
+   }
 })
 
 app.controller('notesCtrl', function($scope, $http) {
@@ -49,6 +51,6 @@ app.controller('notesCtrl', function($scope, $http) {
    })
 })
 
-app.controller('mainCtrl', function($scope) {
+app.controller('registerCtrl', function($scope) {
 
 })
