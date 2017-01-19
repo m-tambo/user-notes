@@ -1,9 +1,15 @@
 body {
    background-color: #lightgreen;
+   display: inline-flex;
+}
+
+/*chickenscratch logo*/
+.logo {
+   margin: 25% 3%;
 }
 
 form {
-   margin: 6% 0% 0% 70%;
+   margin: 6% 0% 0% 60%;
 }
 
 a {
@@ -17,7 +23,8 @@ a {
 
 .bigTextbox {
    width: 60%;
-   min-height: 350px;
+   min-height: 300px;
+   min-width: 150px;
    margin: 3% 0;
 }
 

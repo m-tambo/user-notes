@@ -3,6 +3,7 @@ console.log('___User Notes exercise___')
 const app = angular.module('userNotes', ['ngRoute'])
 
 
+
 var links = [{label: '_login_', bg: '#c0392b'},
              {label: '_register_', bg: '#16a085'},
              {label: '_notes_', bg: '#8e44ad'},
@@ -136,49 +137,3 @@ function setTransition(element, string) {
   element.style.OTransition = string;
   element.style.transition = string;
 }
-
-// function listeners() {
-//    let aTags = document.querySelectorAll('a')
-//    aTags[0].addEventListener("click", function(e) {
-//       console.log(e)
-
-//    })
-
-//    aTags[1].addEventListener("click", function(e) {
-//       console.log(e)
-
-//    })
-
-//    aTags[2].addEventListener("click", function(e) {
-//       console.log(e)
-
-//    })
-
-//    aTags[3].addEventListener("click", function(e) {
-//       console.log(e)
-
-//    })
-
-   // document.addEventListener('click', (e) => {
-   //    console.log(e)
-   // })
-
-   // let link2 = document.querySelector('a:nth-child(2)')
-   // link2.addEventListener("click", function(e) {
-   //    console.log(e)
-
-   // })
-
-   // let link3 = document.querySelector('a')
-   // link3.addEventListener("click", function(e) {
-   //    console.log(e)
-
-   // })
-
-   // let link4 = document.querySelector('a')
-   // link4.addEventListener("click", function(e) {
-   //    console.log(e)
-
-   // })
-
-// }
