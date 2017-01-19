@@ -1,11 +1,12 @@
 let notes = []
 
-app.controller('notesCtrl', function($scope, $http) {
+app.controller('notesCtrl', function($scope, $http, noteFactory) {
    console.log('___this is the notes page___')
 
-   $http.get('https://user-notes-exercise.firebaseio.com/.json')
-   .then( function(info) {
-      console.log(info)
-      return info.data.list
-   })
+   noteFactory.getNotes()
+      .then ((obj) => {
+         $scope.notes = obj
+      })
+
+
 })

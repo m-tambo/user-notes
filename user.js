@@ -1,4 +1,5 @@
-console.log('___User Notes exercise___')
+console.log('___User Notes exercise___', 'styling credit: http://codepen.io/rachsmith/')
+
 
 const app = angular.module('userNotes', ['ngRoute'])
 
